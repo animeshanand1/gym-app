@@ -13,7 +13,6 @@
   }
 }
 
-
 .App-link {
   color: #61dafb;
 }
@@ -27,55 +26,55 @@
   }
 }
 
-.navbar{
+.navbar {
   background: #333;
   color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
-.navbarLogo img{
+.navbarLogo img {
   height: 35px;
 }
-.navbarUl{
+.navbarUl {
   display: flex;
   justify-content: space-between;
 }
-.navbarUl li{
+.navbarUl li {
   list-style: none;
   padding: 5px;
 }
-.navbarUl li a{
+.navbarUl li a {
   color: #fff;
   text-decoration: none;
 }
-.navbarUl li a:hover{
+.navbarUl li a:hover {
   color: #fcaf3c;
   font-weight: 500;
 }
-nav a.active{
+nav a.active {
   color: #fcaf3c;
   font-weight: 500;
   border-bottom: #fff 2px solid;
 }
 .heroSection {
-  background: linear-gradient(to bottom, rgba(34, 34, 34, 0.9), rgba(167, 75, 75, 0.9)); 
+  background: linear-gradient(to bottom, rgba(34, 34, 34, 0.9), rgba(167, 75, 75, 0.9));
   min-height: 100vh;
   display: grid;
-  grid-template-columns:1.2fr 0.8fr;
+  grid-template-columns: 1.2fr 0.8fr;
   gap: 20px;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color:#fff;
+  color: #fff;
 }
-.heroSectionOverlayText{
- padding: 1rem;
- position: relative;
- background: url('../public/Images/circular-bg.png') no-repeat;
- display: flex;
- flex-direction: column;
- text-align: start;
+.heroSectionOverlayText {
+  padding: 1rem;
+  position: relative;
+  background: url("../public/Images/circular-bg.png") no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
 }
 /* .heroSection .heroImage img{
   margin-top: 2rem;
@@ -93,18 +92,18 @@ nav a.active{
 
 .trainerPhoto {
   width: 100%;
-  height:45%;
+  height: 45%;
   aspect-ratio: 1/1;
   margin-right: 15px;
 }
 
 .trainerContactBtn {
-  background-color:#000;
-  color: #fff; 
+  background-color: #000;
+  color: #fff;
   margin-top: 5px;
   padding: 10px;
-  border: none; 
-  border-radius: 5px; 
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -116,7 +115,7 @@ nav a.active{
 .specialties {
   font-weight: bold;
 }
-.trainer-grid{
+.trainer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
@@ -137,36 +136,35 @@ nav a.active{
   box-shadow: 3px 2px 5px rgba(255, 255, 255, 0.7);
 }
 .subscriptionCard:nth-child(even) {
-  height:95%;
+  height: 95%;
   box-shadow: 2px 1px 3px rgba(255, 255, 255, 0.7);
   transform: translate(0, -10px);
   rotate: 2.5deg;
 }
 .subscriptionCard:nth-child(even):hover {
-  height:95%;
+  height: 95%;
   transform: translate(0, 10px);
   rotate: 0deg;
 }
 
 .subscriptionCard .featuredCard {
-  background-color: #f0f8ff; 
-  border-color: #007bff; 
+  background-color: #f0f8ff;
+  border-color: #007bff;
 }
 
 .featuredCard .price {
   font-size: 20px;
   font-weight: bold;
 }
-.membership-subsciption-grid{
+.membership-subsciption-grid {
   display: grid;
   padding: 25px;
   gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
- 
 }
 
 .subscriptionCard .benefitsList {
-  list-style-type: disc; 
+  list-style-type: disc;
   margin-top: 15px;
   padding: 10px;
   height: 100px;
@@ -203,117 +201,119 @@ nav a.active{
 }
 
 /* footer starts here */
-.footerContainer{
+.footerContainer {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 25px;
 }
-.footerLinks{
+.footerLinks {
   display: flex;
   flex-direction: column;
 }
-.footerSocial{
+.footerSocial {
   display: flex;
   flex-direction: column;
 }
-.footerLinks, .footerSocial{
+.footerLinks,
+.footerSocial {
   color: #eb0349;
 }
 
 /* login/signup */
-login{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	font-family: 'Jost', sans-serif;
+login {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
-background-image: url('../public/Images/gym-amm.jpg');	
+  background-image: url("../public/Images/gym-amm.jpg");
 }
-.main{
-	width: 350px;
-	height: 500px;
-	background: red;
-	overflow: hidden;
-	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
-	border-radius: 10px;
-	box-shadow: 5px 20px 50px #000;
+.main {
+  width: 350px;
+  height: 500px;
+  background: red;
+  overflow: hidden;
+  background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38")
+    no-repeat center/ cover;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
 }
-#chk{
-	display: none;
+#chk {
+  display: none;
 }
-.signup{
-	position: relative;
-	width:100%;
-	height: 100%;
+.signup {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-label{
-	color: #fff;
-	font-size: 2.3em;
-	justify-content: center;
-	display: flex;
-	margin: 60px;
-	font-weight: bold;
-	cursor: pointer;
-	transition: .5s ease-in-out;
+label {
+  color: #fff;
+  font-size: 2.3em;
+  justify-content: center;
+  display: flex;
+  margin: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
-login input{
-	width: 60%;
-	height: 30px;
-	background: #e0dede;
-	justify-content: center;
-	display: flex;
-	margin: 20px auto;
-	padding: 10px;
-	border: none;
-	outline: none;
-	border-radius: 5px;
+login input {
+  width: 60%;
+  height: 30px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
-.signupbtn{
-	width: 60%;
-	height: 40px;
-	margin: 10px auto;
-	justify-content: center;
-	display: block;
-	color: #fff;
-	background: #573b8a;
-	font-size: 1rem;
-	font-weight: bold;
-	margin-top: 20px;
-	outline: none;
-	border: none;
-	border-radius: 5px;
-	transition: .2s ease-in;
-	cursor: pointer;
+.signupbtn {
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: #573b8a;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
 }
-.signupbtn:hover{
-	background: #6d44b8;
+.signupbtn:hover {
+  background: #6d44b8;
 }
-.login{
-	height: 460px;
-	background: #eee;
-	border-radius: 60% / 10%;
-	transform: translateY(-180px);
-	transition: .8s ease-in-out;
+.login {
+  height: 460px;
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
 }
-.login label{
-	color: #573b8a;
-	transform: scale(.6);
+.login label {
+  color: #573b8a;
+  transform: scale(0.6);
 }
-#chk:checked ~ .login{
-	transform: translateY(-500px);
+#chk:checked ~ .login {
+  transform: translateY(-500px);
 }
-#chk:checked ~ .login label{
-	transform: scale(1);	
+#chk:checked ~ .login label {
+  transform: scale(1);
 }
-#chk:checked ~ .signup label{
-	transform: scale(.6);
+#chk:checked ~ .signup label {
+  transform: scale(0.6);
 }
 /* testimonials */
-.testimonials-grid{
+.testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
@@ -336,14 +336,14 @@ login input{
 .testimonial-image {
   width: 80px;
   height: 80px;
-  border-radius: 50%; 
-  object-fit: cover;  
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .testimonial-buttons button {
   padding: 8px;
-  background-color: #007bff; 
-  color: #ffffff; 
+  background-color: #007bff;
+  color: #ffffff;
   border: none;
   border-radius: 50%;
   top: 50%;
@@ -355,15 +355,14 @@ login input{
   transition: background-color 0.3s ease;
 }
 .testimonials-prev-btn {
-  left:0.65%;
+  left: 0.65%;
 }
 .testimonials-next-btn {
-  right:0.65%;
+  right: 0.65%;
 }
 button:hover {
   background-color: #0056b3;
 }
-
 
 .testimonial-text {
   font-style: italic;
@@ -376,14 +375,14 @@ button:hover {
 /* slider carousel service */
 .carousel {
   position: relative;
-  margin: 0 auto; 
-  overflow: hidden; 
-  height: auto; 
+  margin: 0 auto;
+  overflow: hidden;
+  height: auto;
 }
 
-.carousel-item img{
+.carousel-item img {
   display: none;
- height: 500px;
+  height: 500px;
 }
 
 .carousel-item .active {
@@ -391,7 +390,6 @@ button:hover {
   opacity: 1;
   width: 100%;
 }
-
 
 .carousel-control {
   position: absolute;
@@ -408,4 +406,35 @@ button:hover {
 .next-btn,
 .prev-btn {
   display: inline-block;
+}
+
+/* services */
+
+.overviewService {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  padding: 5px;
+}
+.overviewService img {
+  object-fit: cover;
+  border-radius: 6px;
+}
+.textGrid {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(169, 168, 191, 1) 100%);
+  color: white;
+  text-align: center;
+  margin-left: -15%;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.textGrid:nth-child(even){
+  font-style: italic;
+  margin-left: 1%;
+}
+.textGrid:nth-child(odd){
+  font-weight: bold;
+  margin-left: 0%;
 }

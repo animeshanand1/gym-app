@@ -3,8 +3,8 @@ import TestimonialCard from '../components/TestimonialCard'
 
 const Testimonials = () => {
     const testimonials = [
-        { name: 'Alice', image: 'Images/alice.jpg', testimonial: 'Great product!' },
-        { name: 'Bob', image: 'Images/bob.jpg', testimonial: 'Awesome service.' },
+        { name: 'Alice', image: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c21a4d7a-89e2-45f7-ad5c-fd468d40e9dc/original=true/00151-1348110475.jpeg', testimonial: 'Great product!' },
+        { name: 'Bob', image: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7895caa0-e058-49c9-a1cd-2941b3616363/original=true/00193-3793412494.jpeg', testimonial: 'Awesome service.' },
         { name: 'Charlie', image: 'Images/charlie.jpg', testimonial: 'Highly recommended.' },
         { name: 'Mar', image: 'Images/charlie.jpg', testimonial: 'Highly recommended.' },
         { name: 'Mar', image: 'Images/charlie.jpg', testimonial: 'Highly recommended.' },
