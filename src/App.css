@@ -251,7 +251,7 @@ login {
   width: 100%;
   height: 100%;
 }
-login>label {
+login label {
   color: #fff;
   font-size: 2.3em;
   justify-content: center;
@@ -261,7 +261,7 @@ login>label {
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
-login>input {
+login input {
   width: 60%;
   height: 30px;
   background: #e0dede;
