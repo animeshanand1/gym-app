@@ -1,6 +1,8 @@
 import React from 'react'
 import Carousel from '../components/Carousel'
 import SubsciptionInfo from './SubsciptionInfo'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const Services = () => {
   const imgsData = [
@@ -11,7 +13,7 @@ const Services = () => {
   return (
     <services>
       <Carousel imgsData={imgsData} />
-      <h3>Our Moto</h3>
+      <h3 className='headlineClass'>Our Moto</h3>
       <div className='overviewService'>
         <div className='imgGrid'>
           <img src='https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D' alt='service' />
@@ -22,13 +24,44 @@ const Services = () => {
       </div>
       <div className='overviewService'>
         <div className='textGrid'>
-          <p>Our Gym offer amenities like locker rooms, showers, and convenient operating hours that fit into your schedule.<br/> This convenience makes it easier to incorporate fitness into your daily routine.
+          <p>Our Gym offer amenities like locker rooms, showers, and convenient operating hours that fit into your schedule.<br /> This convenience makes it easier to incorporate fitness into your daily routine.
           </p> </div>
         <div className='imgGrid'>
           <img src='https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D' alt='service' />
         </div>
       </div>
+      <h3 className='headlineClass'>Our Offerings</h3>
+      <div class='servicesImgContainer'>
+        <div class='imgContainer'>
+          <img src="services/gym-locker.png" alt='service' />
+          <div class='imgDescription'>Locker<hr/>
+          <ul>
+            <li>Our locker features a robust locking mechanism, providing peace of mind while you focus on your workout.</li>
+          </ul>
+          </div>
+        </div>
+        <div class='imgContainer'>
+          <img src='services/designer.png' alt='service' />
+          <div class='imgDescription'>Inhouse Store<hr/>
+          <ul>
+            <li>Running out of budget our Inhouse store will provide you with nutrional suppliments</li>
+          </ul>
+          </div>
+        </div>
+        <div class='imgContainer'>
+        <img src='services/gym-shower.png' alt='service' />
+          <div class='imgDescription'>Shower Room<hr/> 
+          <ul>
+            <li>
+              Our shower rooms are equipped with all the necessary amenities to make your post-workout experience as comfortable as possible.
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
       <SubsciptionInfo />
+      <Contact />
+      <Footer/>
     </services>
   )
 }

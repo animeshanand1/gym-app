@@ -4,7 +4,7 @@ import MembershipCard from '../components/MembershipCard'
 const SubsciptionInfo = () => {
     return (
         <div className='subscriptionContainer' style={{ backgroundColor: '#814141', padding:'10px' }}>
-            <h3 style={{ color: '#fff', fontWeight: '700' }}>Explore Our Membership Plans</h3>
+            <h2 style={{ color: '#fff', fontWeight: '700' }}>Explore Our Membership Plans</h2>
             <div className='membership-subsciption-grid'>
                 <MembershipCard
                     tier="Premium"
