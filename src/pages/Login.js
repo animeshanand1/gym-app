@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import {  useNavigate } from 'react-router-dom'
 
 const Login = () => {
+    const navigate= useNavigate()
     const [email, setEmail] = useState('xyz@gm')
     const [password, setPassword] = useState('123')
     const [confirmPassword, setConfirmPassword] = useState('123')
@@ -15,22 +17,24 @@ const Login = () => {
         if (password !== confirmPassword) {
             return alert('Passwords do not match')
         }
-        else {
+        
             try {
                 const response = await axios.post('http://localhost:5000/signup', {
                     email,
-                    password
+                    password,
+                    confirmPassword
                 })
-                console.log('Signup successful:', response.data);
-                setEmail('')
-                setPassword('')
+                // console.log('Signup successful:', response.data);
+                localStorage.setItem('token', response.data.token)
+                console.log(localStorage.getItem('token'))
+               
             
             } catch (error) {
-                console.error(error)
+                console.error(error.message)
             }
         }
         
-    }
+   
 
     const formLogin = async (e) => {
         e.preventDefault()
@@ -39,7 +43,9 @@ const Login = () => {
                 email: LoginEmail,
                 password: LoginPassword
             })
-            console.log('Login successful:', response.data);
+            localStorage.setItem('token', response.data.token)
+            // console.log('Login successful:', response.data);
+            navigate('/')
         } catch (error) {
             console.error('Login failed:', error.message)
         }

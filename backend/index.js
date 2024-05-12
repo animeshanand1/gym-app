@@ -26,7 +26,7 @@ mongoose.connect(connection_url, {
 
 // Routes
 app.post('/signup', registerUser);
-app.post('/login', loginController);
+app.post('/login', loginController); 
 app.get('/', (req, res) => {
     res.send('Hello World');
 });
